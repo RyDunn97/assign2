@@ -29,6 +29,8 @@ public class TestingCalc {
 			{
 				case 'g':
 					System.out.println(testCalc.getTotal());
+					break;
+					
 				case 'a':
 					System.out.println("enter an integer: \n");
 					userInput = scan.nextInt();
