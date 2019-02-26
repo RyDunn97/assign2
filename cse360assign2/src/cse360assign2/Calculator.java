@@ -19,40 +19,41 @@ public class Calculator {
 	/**
 	 * Returns the current value of the total variable.
 	 * 
-	 * @return
+	 * @return the current value of the total variable of the object
 	 */
 	public int getTotal () 
 	{
-		return 0;
+		return total;
 	}
 	
 	/**
 	 * Adds the parameter to the total variable.
 	 * 
-	 * @param value
+	 * @param value amount to add to the total
 	 */
-	public void add (int value) {
-		
+	public void add (int value) 
+	{
+		total = value + total;
 	}
 	
 	/**
 	 * Subtracts the parameter from the total variable. 
 	 * 
-	 * @param value
+	 * @param value amount to subtract from the total
 	 */
 	public void subtract (int value) 
 	{
-		
+		total = total - value;
 	}
 	
 	/**
 	 * Multiplies the parameter by the total variable.
 	 * 
-	 * @param value
+	 * @param value amount to multiply the total by
 	 */
 	public void multiply (int value) 
 	{
-		
+		total = total * value;
 	}
 	
 	/**
@@ -60,11 +61,14 @@ public class Calculator {
 	 * If the parameter is 0, the total variable is set to 0 in order to
 	 * avoid an exception.
 	 * 
-	 * @param value
+	 * @param value amount to divide the total by
 	 */
 	public void divide (int value) 
 	{
-		
+		if(value == 0)
+			total = 0;
+		else
+			total = total/value;
 	}
 	
 	/**
